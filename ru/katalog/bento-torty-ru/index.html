@@ -80,6 +80,50 @@
 }}</script>
     <script
         type="application/ld+json">{ 	"@context": "http://schema.org/", 	"@type": "WebSite",     "@id":"https://biskvit.kiev.ua/ru/#website", 	"url": "https://biskvit.kiev.ua/ru/",     "name":"Кондитерская Biskvit", 	"description":"Лучшие торты на заказ Киев ✨ Изготовляем торты на заказ любой сложности по вашему фото или из нашего каталога ☎️ Звоните прямо сейчас",     "inLanguage":"ru-RU", 	"potentialAction": { 		"@type": "SearchAction", 		"target": "https://biskvit.kiev.ua/ru/?s={search_term_string}", 		"query-input": "required name=search_term_string" 	} }</script>
+
+
+
+    <script>
+        // Получаем ссылки на элементы меню верхнего уровня
+        var menuItem1993 = document.getElementById("menu-item-1993");
+        var menuItem1994 = document.getElementById("menu-item-1994");
+        var menuItem1995 = document.getElementById("menu-item-1995");
+        var menuItem1996 = document.getElementById("menu-item-1996");
+
+        // Получаем ссылки на соответствующие подменю
+        var subMenu1993 = menuItem1993.querySelector(".sub-menu");
+        var subMenu1994 = menuItem1994.querySelector(".sub-menu");
+        var subMenu1995 = menuItem1995.querySelector(".sub-menu");
+        var subMenu1996 = menuItem1996.querySelector(".sub-menu");
+
+        // Добавляем обработчик события клика для пункта меню 1993
+        menuItem1993.addEventListener("click", function () {
+            toggleSubMenu(subMenu1993); // Функция для переключения видимости подменю
+        });
+
+        // Аналогично добавляем обработчики для остальных пунктов меню
+        menuItem1994.addEventListener("click", function () {
+            toggleSubMenu(subMenu1994);
+        });
+
+        menuItem1995.addEventListener("click", function () {
+            toggleSubMenu(subMenu1995);
+        });
+
+        menuItem1996.addEventListener("click", function () {
+            toggleSubMenu(subMenu1996);
+        });
+
+        // Функция для переключения видимости подменю
+        function toggleSubMenu(subMenu) {
+            if (subMenu.style.display === "none" || subMenu.style.display === "") {
+                subMenu.style.display = "block"; // Показать подменю
+            } else {
+                subMenu.style.display = "none"; // Скрыть подменю
+            }
+        }
+
+    </script>
 </head>
 
 <body itemtype="https://schema.org/Blog" itemscope="itemscope"
@@ -226,7 +270,8 @@
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-502">
                                                             <a href="index.html" aria-current="page"
                                                                 class="elementor-sub-item elementor-item-active menu-link">Бенто
-                                                                торты</a></li>
+                                                                торты</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-503">
                                                             <a href="../detskie-torty/index.html"
@@ -241,12 +286,14 @@
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-505">
                                                             <a href="../korporativnye-torty/index.html"
                                                                 class="elementor-sub-item menu-link">Корпоративные
-                                                                торты</a></li>
+                                                                торты</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-507">
                                                             <a href="../prazdnichnye-torty/index.html"
                                                                 class="elementor-sub-item menu-link">Праздничные
-                                                                торты</a></li>
+                                                                торты</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-506">
                                                             <a href="../mussovye-torty/index.html"
@@ -256,29 +303,35 @@
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3323">
                                                             <a href="../eroticheskie-torty/index.html"
                                                                 class="elementor-sub-item menu-link">Эротические
-                                                                торты</a></li>
+                                                                торты</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-504">
                                                             <a href="../kapkejki/index.html"
-                                                                class="elementor-sub-item menu-link">Капкейки</a></li>
+                                                                class="elementor-sub-item menu-link">Капкейки</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3828">
                                                             <a href="../makaruny/index.html"
-                                                                class="elementor-sub-item menu-link">Макаруны</a></li>
+                                                                class="elementor-sub-item menu-link">Макаруны</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-904">
                                                     <a href="../../nachinki/index.html"
-                                                        class="elementor-item menu-link">Начинки</a></li>
+                                                        class="elementor-item menu-link">Начинки</a>
+                                                </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-903">
                                                     <a href="../../kontakti/index.html"
-                                                        class="elementor-item menu-link">Контакты</a></li>
+                                                        class="elementor-item menu-link">Контакты</a>
+                                                </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1758">
                                                     <a href="../../otzyvy/index.html"
-                                                        class="elementor-item menu-link">Отзывы</a></li>
+                                                        class="elementor-item menu-link">Отзывы</a>
+                                                </li>
                                             </ul>
                                         </nav>
                                         <div class="elementor-menu-toggle" role="button" tabindex="0"
@@ -299,7 +352,8 @@
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-502">
                                                             <a href="index.html" aria-current="page"
                                                                 class="elementor-sub-item elementor-item-active menu-link">Бенто
-                                                                торты</a></li>
+                                                                торты</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-503">
                                                             <a href="../detskie-torty/index.html"
@@ -314,12 +368,14 @@
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-505">
                                                             <a href="../korporativnye-torty/index.html"
                                                                 class="elementor-sub-item menu-link">Корпоративные
-                                                                торты</a></li>
+                                                                торты</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-507">
                                                             <a href="../prazdnichnye-torty/index.html"
                                                                 class="elementor-sub-item menu-link">Праздничные
-                                                                торты</a></li>
+                                                                торты</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-506">
                                                             <a href="../mussovye-torty/index.html"
@@ -329,29 +385,35 @@
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3323">
                                                             <a href="../eroticheskie-torty/index.html"
                                                                 class="elementor-sub-item menu-link">Эротические
-                                                                торты</a></li>
+                                                                торты</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-504">
                                                             <a href="../kapkejki/index.html"
-                                                                class="elementor-sub-item menu-link">Капкейки</a></li>
+                                                                class="elementor-sub-item menu-link">Капкейки</a>
+                                                        </li>
                                                         <li
                                                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3828">
                                                             <a href="../makaruny/index.html"
-                                                                class="elementor-sub-item menu-link">Макаруны</a></li>
+                                                                class="elementor-sub-item menu-link">Макаруны</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-904">
                                                     <a href="../../nachinki/index.html"
-                                                        class="elementor-item menu-link">Начинки</a></li>
+                                                        class="elementor-item menu-link">Начинки</a>
+                                                </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-903">
                                                     <a href="../../kontakti/index.html"
-                                                        class="elementor-item menu-link">Контакты</a></li>
+                                                        class="elementor-item menu-link">Контакты</a>
+                                                </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1758">
                                                     <a href="../../otzyvy/index.html"
-                                                        class="elementor-item menu-link">Отзывы</a></li>
+                                                        class="elementor-item menu-link">Отзывы</a>
+                                                </li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -380,19 +442,23 @@
                                                 <li id="menu-item-1998"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1998">
                                                     <a href="../torty-dlya-malchikov/index.html" class="menu-link">Торты
-                                                        для мальчиков</a></li>
+                                                        для мальчиков</a>
+                                                </li>
                                                 <li id="menu-item-2045"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2045">
                                                     <a href="../torty-dlya-devochek/index.html" class="menu-link">Торты
-                                                        для девочек</a></li>
+                                                        для девочек</a>
+                                                </li>
                                                 <li id="menu-item-2508"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2508">
                                                     <a href="../torty-dlya-novorozhdyonnyh/index.html"
-                                                        class="menu-link">Торты для новорождённых</a></li>
+                                                        class="menu-link">Торты для новорождённых</a>
+                                                </li>
                                                 <li id="menu-item-2801"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2801">
                                                     <a href="../torty-edinorog/index.html" class="menu-link">Торты
-                                                        «Единорог»</a></li>
+                                                        «Единорог»</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li id="menu-item-1994"
@@ -403,63 +469,78 @@
                                                 <li id="menu-item-2000"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2000">
                                                     <a href="../torty-na-gender-pati/index.html" class="menu-link">Торты
-                                                        на гендер пати</a></li>
+                                                        на гендер пати</a>
+                                                </li>
                                                 <li id="menu-item-3303"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3303">
                                                     <a href="../torty-dlya-muzhchin/index.html" class="menu-link">Торты
-                                                        для мужчин</a></li>
+                                                        для мужчин</a>
+                                                </li>
                                                 <li id="menu-item-3304"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3304">
                                                     <a href="../torty-dlya-zhenshhin/index.html" class="menu-link">Торты
-                                                        для женщин</a></li>
+                                                        для женщин</a>
+                                                </li>
                                                 <li id="menu-item-2089"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2089">
                                                     <a href="../torty-na-krestiny-malchiku/index.html"
-                                                        class="menu-link">Торты на крестины мальчику</a></li>
+                                                        class="menu-link">Торты на крестины мальчику</a>
+                                                </li>
                                                 <li id="menu-item-2379"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2379">
                                                     <a href="../torty-na-krestiny-devochki/index.html"
-                                                        class="menu-link">Торты на крестины девочки</a></li>
+                                                        class="menu-link">Торты на крестины девочки</a>
+                                                </li>
                                                 <li id="menu-item-2292"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2292">
                                                     <a href="../torty-bez-mastiki/index.html" class="menu-link">Торты
-                                                        без мастики</a></li>
+                                                        без мастики</a>
+                                                </li>
                                                 <li id="menu-item-2702"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2702">
                                                     <a href="../torty-s-mastikoj/index.html" class="menu-link">Торты с
-                                                        мастикой</a></li>
+                                                        мастикой</a>
+                                                </li>
                                                 <li id="menu-item-2894"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2894">
                                                     <a href="../torty-s-prikolom/index.html" class="menu-link">Торты с
-                                                        приколом</a></li>
+                                                        приколом</a>
+                                                </li>
                                                 <li id="menu-item-2947"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2947">
                                                     <a href="../torty-na-den-rozhdeniya/index.html"
-                                                        class="menu-link">Торты на день рождения</a></li>
+                                                        class="menu-link">Торты на день рождения</a>
+                                                </li>
                                                 <li id="menu-item-3414"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3414">
                                                     <a href="../torty-s-makarunami/index.html" class="menu-link">Торты с
-                                                        макарунами</a></li>
+                                                        макарунами</a>
+                                                </li>
                                                 <li id="menu-item-3870"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3870">
                                                     <a href="../torty-dlya-devushki/index.html" class="menu-link">Торты
-                                                        для девушки</a></li>
+                                                        для девушки</a>
+                                                </li>
                                                 <li id="menu-item-3969"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3969">
                                                     <a href="../torty-dlya-parnya/index.html" class="menu-link">Торты
-                                                        для парня</a></li>
+                                                        для парня</a>
+                                                </li>
                                                 <li id="menu-item-4220"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4220">
                                                     <a href="../torty-dlya-mamy/index.html" class="menu-link">Торты для
-                                                        мамы</a></li>
+                                                        мамы</a>
+                                                </li>
                                                 <li id="menu-item-4397"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4397">
                                                     <a href="../torty-dlya-papy/index.html" class="menu-link">Торты для
-                                                        папы</a></li>
+                                                        папы</a>
+                                                </li>
                                                 <li id="menu-item-4460"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4460">
                                                     <a href="../torty-dlya-babushki/index.html" class="menu-link">Торты
-                                                        для бабушки</a></li>
+                                                        для бабушки</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li id="menu-item-1995"
@@ -470,31 +551,38 @@
                                                 <li id="menu-item-1997"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1997">
                                                     <a href="../odnoyarusnye-svadebnye-torty/index.html"
-                                                        class="menu-link">Одноярусные свадебные торты</a></li>
+                                                        class="menu-link">Одноярусные свадебные торты</a>
+                                                </li>
                                                 <li id="menu-item-2227"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2227">
                                                     <a href="../dvuhyarusnye-svadebnye-torty/index.html"
-                                                        class="menu-link">Торты свадебные двухъярусные</a></li>
+                                                        class="menu-link">Торты свадебные двухъярусные</a>
+                                                </li>
                                                 <li id="menu-item-2434"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2434">
                                                     <a href="../torty-svadebnye-trehyarusnye/index.html"
-                                                        class="menu-link">Торты свадебные трехъярусные</a></li>
+                                                        class="menu-link">Торты свадебные трехъярусные</a>
+                                                </li>
                                                 <li id="menu-item-2619"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2619">
                                                     <a href="../bolshie-svadebnye-torty/index.html"
-                                                        class="menu-link">Большие свадебные торты</a></li>
+                                                        class="menu-link">Большие свадебные торты</a>
+                                                </li>
                                                 <li id="menu-item-2782"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2782">
                                                     <a href="../originalnye-svadebnye-torty/index.html"
-                                                        class="menu-link">Оригинальные свадебные торты</a></li>
+                                                        class="menu-link">Оригинальные свадебные торты</a>
+                                                </li>
                                                 <li id="menu-item-3014"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3014">
                                                     <a href="../kremovye-svadebnye-torty/index.html"
-                                                        class="menu-link">Кремовые свадебные торты</a></li>
+                                                        class="menu-link">Кремовые свадебные торты</a>
+                                                </li>
                                                 <li id="menu-item-3459"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3459">
                                                     <a href="../svadebnye-torty-s-czvetami/index.html"
-                                                        class="menu-link">Свадебные торты с цветами</a></li>
+                                                        class="menu-link">Свадебные торты с цветами</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li id="menu-item-1996"
@@ -505,35 +593,43 @@
                                                 <li id="menu-item-1999"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1999">
                                                     <a href="../torty-na-1-god-dlya-malchika/index.html"
-                                                        class="menu-link">Торты на 1 год для мальчика</a></li>
+                                                        class="menu-link">Торты на 1 год для мальчика</a>
+                                                </li>
                                                 <li id="menu-item-2182"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2182">
                                                     <a href="../torty-na-1-god-dlya-devochki/index.html"
-                                                        class="menu-link">Торты на 1 год для девочки</a></li>
+                                                        class="menu-link">Торты на 1 год для девочки</a>
+                                                </li>
                                                 <li id="menu-item-2369"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2369">
                                                     <a href="../torty-na-2-goda-dlya-malchika/index.html"
-                                                        class="menu-link">Торты на 2 года для мальчика</a></li>
+                                                        class="menu-link">Торты на 2 года для мальчика</a>
+                                                </li>
                                                 <li id="menu-item-2627"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2627">
                                                     <a href="../torty-na-2-goda-dlya-devochki/index.html"
-                                                        class="menu-link">Торты на 2 года для девочки</a></li>
+                                                        class="menu-link">Торты на 2 года для девочки</a>
+                                                </li>
                                                 <li id="menu-item-2855"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2855">
                                                     <a href="../torty-na-3-goda-dlya-malchika/index.html"
-                                                        class="menu-link">Торты на 3 года для мальчика</a></li>
+                                                        class="menu-link">Торты на 3 года для мальчика</a>
+                                                </li>
                                                 <li id="menu-item-3075"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3075">
                                                     <a href="../torty-na-3-goda-dlya-devochki/index.html"
-                                                        class="menu-link">Торты на 3 года для девочки</a></li>
+                                                        class="menu-link">Торты на 3 года для девочки</a>
+                                                </li>
                                                 <li id="menu-item-3170"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3170">
                                                     <a href="../torty-na-5-let-dlya-devochki/index.html"
-                                                        class="menu-link">Торты на 5 лет для девочки</a></li>
+                                                        class="menu-link">Торты на 5 лет для девочки</a>
+                                                </li>
                                                 <li id="menu-item-3179"
                                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3179">
                                                     <a href="../torty-na-5-let-malchiku/index.html"
-                                                        class="menu-link">Торты на 5 лет мальчику</a></li>
+                                                        class="menu-link">Торты на 5 лет мальчику</a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -901,7 +997,8 @@
                                 <strong>Маленький торт </strong>весит, в среднем, 300-400 г. Но по желанию клиента масса
                                 десерта может составлять 500-600 г. Такой порции оптимально хватит на двоих.
                                 <strong>Диаметр бенто торта</strong> варьируется от 9 до 14 см, а высота составляет
-                                около 6-8 см.</p>
+                                около 6-8 см.
+                            </p>
                             <h2>Бенто торты на заказ Киев</h2>
                             <p>В кондитерской студии Biskvit в Киеве вы можете <strong>заказать бенто торт</strong> на
                                 любой вкус. У этих десертов может быть как простое, так и сложное оформление.</p>
@@ -989,7 +1086,7 @@
                                             <img data-lazyloaded="1"
                                                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTQiIGhlaWdodD0iMTQxIiB2aWV3Qm94PSIwIDAgMTk0IDE0MSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4="
                                                 width="194" height="141"
-                                                data-src="/wp-content/uploads/2022/09/cropped-logo-1.webp.pagespeed.ce.xyYFA6YcOW.webp"
+                                                data-src="../../wp-content/uploads/2022/09/cropped-logo-1.webp.pagespeed.ce.xyYFA6YcOW.webp"
                                                 class="attachment-full size-full"
                                                 alt="Кондитерская Biskvit торты на заказ" decoding="async"> </a>
                                     </div>
@@ -1208,11 +1305,32 @@
         data-no-optimize="1">var litespeed_vary = document.cookie.replace(/(?:(?:^|.*;\s*)_lscache_vary\s*\=\s*([^;]*).*$)|^.*$/, ""); litespeed_vary || fetch("/wp-content/plugins/litespeed-cache/guest.vary.php", { method: "POST", cache: "no-cache", redirect: "follow" }).then(e => e.json()).then(e => { console.log(e), e.hasOwnProperty("reload") && "yes" == e.reload && (sessionStorage.setItem("litespeed_docref", document.referrer), window.location.reload(!0)) });</script>
     <script data-optimized="1" type="litespeed/javascript"
         data-src="https://biskvit.kiev.ua/wp-content/litespeed/js/d9c35858ad81e29b72bb50a98b68dd3d.js?ver=34144"></script>
-    <script>const litespeed_ui_events = ["mouseover", "click", "keydown", "wheel", "touchmove", "touchstart"]; var urlCreator = window.URL || window.webkitURL; function litespeed_load_delayed_js_force() { console.log("[LiteSpeed] Start Load JS Delayed"), litespeed_ui_events.forEach(e => { window.removeEventListener(e, litespeed_load_delayed_js_force, { passive: !0 }) }), document.querySelectorAll("iframe[data-litespeed-src]").forEach(e => { e.setAttribute("src", e.getAttribute("data-litespeed-src")) }), "loading" == document.readyState ? window.addEventListener("DOMContentLoaded", litespeed_load_delayed_js) : litespeed_load_delayed_js() } litespeed_ui_events.forEach(e => { window.addEventListener(e, litespeed_load_delayed_js_force, { passive: !0 }) }); async function litespeed_load_delayed_js() { let t = []; for (var d in document.querySelectorAll('script[type="litespeed/javascript"]').forEach(e => { t.push(e) }), t) await new Promise(e => litespeed_load_one(t[d], e)); document.dispatchEvent(new Event("DOMContentLiteSpeedLoaded")), window.dispatchEvent(new Event("DOMContentLiteSpeedLoaded")) } function litespeed_load_one(t, e) { console.log("[LiteSpeed] Load ", t); var d = document.createElement("script"); d.addEventListener("load", e), d.addEventListener("error", e), t.getAttributeNames().forEach(e => { "type" != e && d.setAttribute("data-src" == e ? "src" : e, t.getAttribute(e)) }); let a = !(d.type = "text/javascript"); !d.src && t.textContent && (d.src = litespeed_inline2src(t.textContent), a = !0), t.after(d), t.remove(), a && e() } function litespeed_inline2src(t) { try { var d = urlCreator.createObjectURL(new Blob([t.replace(/^(?:< !-- ) ?(.*?)(?:- ->)?$/gm ,"$1")] , {type :"text/javascript "}) ) }catc h(e ) { d ="data:text/javascript;base64, " +btoa(t.replace(/^(?:<!--)?(.*?)(?:-->)?$/gm ,"$1") ) }return  d}</script>
+    <script>const litespeed_ui_events = ["mouseover", "click", "keydown", "wheel", "touchmove", "touchstart"]; var urlCreator = window.URL || window.webkitURL; function litespeed_load_delayed_js_force() { console.log("[LiteSpeed] Start Load JS Delayed"), litespeed_ui_events.forEach(e => { window.removeEventListener(e, litespeed_load_delayed_js_force, { passive: !0 }) }), document.querySelectorAll("iframe[data-litespeed-src]").forEach(e => { e.setAttribute("src", e.getAttribute("data-litespeed-src")) }), "loading" == document.readyState ? window.addEventListener("DOMContentLoaded", litespeed_load_delayed_js) : litespeed_load_delayed_js() } litespeed_ui_events.forEach(e => { window.addEventListener(e, litespeed_load_delayed_js_force, { passive: !0 }) }); async function litespeed_load_delayed_js() { let t = []; for (var d in document.querySelectorAll('script[type="litespeed/javascript"]').forEach(e => { t.push(e) }), t) await new Promise(e => litespeed_load_one(t[d], e)); document.dispatchEvent(new Event("DOMContentLiteSpeedLoaded")), window.dispatchEvent(new Event("DOMContentLiteSpeedLoaded")) } function litespeed_load_one(t, e) { console.log("[LiteSpeed] Load ", t); var d = document.createElement("script"); d.addEventListener("load", e), d.addEventListener("error", e), t.getAttributeNames().forEach(e => { "type" != e && d.setAttribute("data-src" == e ? "src" : e, t.getAttribute(e)) }); let a = !(d.type = "text/javascript"); !d.src && t.textContent && (d.src = litespeed_inline2src(t.textContent), a = !0), t.after(d), t.remove(), a && e() } function litespeed_inline2src(t) { try { var d = urlCreator.createObjectURL(new Blob([t.replace(/^(?:< !-- ) ?(.*?)(?:- ->)?$/gm, "$1")], { type: "text/javascript " })) }catc h(e) { d = "data:text/javascript;base64, " + btoa(t.replace(/^(?:< !-- ) ?(.*?)(?:- ->)?$/g, "$1")) }retur   d }</script>
 
 
 
 
+<script>
+             // Получаем элементы с определенными id
+var menuItemsToToggle = [
+    document.getElementById('menu-item-1993'),
+    document.getElementById('menu-item-1994'),
+    document.getElementById('menu-item-1995'),
+    document.getElementById('menu-item-1996')
+];
+
+// Перебираем элементы и назначаем обработчик события
+menuItemsToToggle.forEach(function (menuItem) {
+    menuItem.addEventListener('click', function (event) {
+        // Получаем подменю для текущего элемента
+        var subMenu = menuItem.querySelector('.sub-menu');
+
+        // Меняем видимость подменю
+        subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+    });
+});
+           
+               </script>
 </body>
 
 </html>

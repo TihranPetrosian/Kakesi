@@ -80,7 +80,51 @@
 }}</script>
     <script
         type="application/ld+json">{ 	"@context": "http://schema.org/", 	"@type": "WebSite",     "@id":"https://biskvit.kiev.ua/ru/#website", 	"url": "https://biskvit.kiev.ua/ru/",     "name":"Кондитерская Biskvit", 	"description":"Лучшие торты на заказ Киев ✨ Изготовляем торты на заказ любой сложности по вашему фото или из нашего каталога ☎️ Звоните прямо сейчас",     "inLanguage":"ru-RU", 	"potentialAction": { 		"@type": "SearchAction", 		"target": "https://biskvit.kiev.ua/ru/?s={search_term_string}", 		"query-input": "required name=search_term_string" 	} }</script>
-</head>
+
+     
+    
+    <script>
+// Получаем ссылки на элементы меню верхнего уровня
+var menuItem1993 = document.getElementById("menu-item-1993");
+var menuItem1994 = document.getElementById("menu-item-1994");
+var menuItem1995 = document.getElementById("menu-item-1995");
+var menuItem1996 = document.getElementById("menu-item-1996");
+
+// Получаем ссылки на соответствующие подменю
+var subMenu1993 = menuItem1993.querySelector(".sub-menu");
+var subMenu1994 = menuItem1994.querySelector(".sub-menu");
+var subMenu1995 = menuItem1995.querySelector(".sub-menu");
+var subMenu1996 = menuItem1996.querySelector(".sub-menu");
+
+// Добавляем обработчик события клика для пункта меню 1993
+menuItem1993.addEventListener("click", function() {
+    toggleSubMenu(subMenu1993); // Функция для переключения видимости подменю
+});
+
+// Аналогично добавляем обработчики для остальных пунктов меню
+menuItem1994.addEventListener("click", function() {
+    toggleSubMenu(subMenu1994);
+});
+
+menuItem1995.addEventListener("click", function() {
+    toggleSubMenu(subMenu1995);
+});
+
+menuItem1996.addEventListener("click", function() {
+    toggleSubMenu(subMenu1996);
+});
+
+// Функция для переключения видимости подменю
+function toggleSubMenu(subMenu) {
+    if (subMenu.style.display === "none" || subMenu.style.display === "") {
+        subMenu.style.display = "block"; // Показать подменю
+    } else {
+        subMenu.style.display = "none"; // Скрыть подменю
+    }
+}
+
+</script>
+    </head>
 
 <body itemtype="https://schema.org/Blog" itemscope="itemscope"
     class="archive category category-torty-na-den-rozhdeniya category-571 wp-custom-logo group-blog ast-inherit-site-logo-transparent ast-hfb-header ast-desktop ast-page-builder-template ast-no-sidebar astra-3.8.2 elementor-default elementor-kit-6">
@@ -729,7 +773,7 @@
                                             <img data-lazyloaded="1"
                                                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTQiIGhlaWdodD0iMTQxIiB2aWV3Qm94PSIwIDAgMTk0IDE0MSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4="
                                                 width="194" height="141"
-                                                data-src="/wp-content/uploads/2022/09/cropped-logo-1.webp.pagespeed.ce.xyYFA6YcOW.webp"
+                                                data-src="../../wp-content/uploads/2022/09/cropped-logo-1.webp.pagespeed.ce.xyYFA6YcOW.webp"
                                                 class="attachment-full size-full"
                                                 alt="Кондитерская Biskvit торты на заказ" decoding="async"> </a>
                                     </div>
@@ -954,6 +998,27 @@
 
 
 
+<script>
+             // Получаем элементы с определенными id
+var menuItemsToToggle = [
+    document.getElementById('menu-item-1993'),
+    document.getElementById('menu-item-1994'),
+    document.getElementById('menu-item-1995'),
+    document.getElementById('menu-item-1996')
+];
+
+// Перебираем элементы и назначаем обработчик события
+menuItemsToToggle.forEach(function (menuItem) {
+    menuItem.addEventListener('click', function (event) {
+        // Получаем подменю для текущего элемента
+        var subMenu = menuItem.querySelector('.sub-menu');
+
+        // Меняем видимость подменю
+        subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+    });
+});
+           
+               </script>
 </body>
 
 </html>
