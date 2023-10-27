@@ -19,6 +19,48 @@ a:active {
   flex-wrap: wrap
 }
 
+/* Стилізуємо кнопку меню */
+.elementor-nav-menu--dropdown-custom {
+  display: none;
+  margin: 0 auto;
+}
+
+/* Стилізуємо кнопку меню */
+.custom-menu-button {
+  background-color: white;
+  color: white;
+  padding: 5px 10px;
+  width: 100px; 
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.elementor-menu-toggle {
+  background-color: #fff!important;
+  flex-direction: column!important;
+}
+
+@media (min-width: 1023px) {
+  .custom-menu-button {
+      display: none;
+  }
+}
+
+/* При кліку на кнопку відображаємо вспливаюче меню */
+.custom-menu-button:focus + .elementor-nav-menu--dropdown-custom {
+  display: block;
+}
+
+/* Стилізуємо посилання в меню */
+.menu-link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
 @media (max-width:768px) {
   .nachinki-page h3 {
     padding: 0 0 0 10px !important;

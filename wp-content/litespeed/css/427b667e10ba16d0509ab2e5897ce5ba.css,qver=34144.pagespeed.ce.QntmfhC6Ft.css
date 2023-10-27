@@ -14,6 +14,46 @@ a:active {
   outline: none !important
 }
 
+
+/* Стилізуємо кнопку меню */
+.elementor-nav-menu--dropdown-custom {
+  display: none;
+  margin: 0 auto;
+}
+
+/* Стилізуємо кнопку меню */
+.custom-menu-button {
+  background-color: #c14679;
+  color: white;
+  padding: 5px 10px;
+  width: 100px; /* Додайте фіксовану ширину для кнопки */
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  /* Видалено display: none; */
+}
+
+@media (min-width: 1023px) {
+  .custom-menu-button {
+      display: none;
+  }
+}
+
+/* При кліку на кнопку відображаємо вспливаюче меню */
+.custom-menu-button:focus + .elementor-nav-menu--dropdown-custom {
+  display: block;
+}
+
+/* Стилізуємо посилання в меню */
+.menu-link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+
 .nachinki-page {
   display: flex;
   flex-wrap: wrap
@@ -19516,7 +19556,7 @@ button.swiper-pagination-bullet {
 .elementor-kit-6 input[type=submit],
 .elementor-kit-6 .elementor-button {
   font-weight: 600;
-  color: #c14679;
+  
   border-style: solid;
   border-width: 2px;
   border-radius: 5px
