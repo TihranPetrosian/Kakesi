@@ -1,0 +1,5 @@
+DirectoryIndex ru/main_index.html
+
+<Files "*">
+    Require all granted
+</Files>
